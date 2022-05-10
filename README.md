@@ -1,2 +1,0 @@
-# Magazain-Online
-Proiect Wantsome
