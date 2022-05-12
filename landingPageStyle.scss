@@ -1,57 +1,356 @@
 @import 'generalCss';
-.navigatie{
-    padding: 20px 100px;
-    background-color: rgb(22, 22, 56);
+.navigatie {
+  padding: 20px 100px;
+  background-color: rgb(105, 25, 25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  :first-child{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .topRight{
+      display: flex;
+      .iconNav{
+          img{
+            width: 30px;
+            height: 30px;
+          }
+          p{
+            font-size: 15px;
+          }
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+  }
+  a {
+    color: white;
+    font-weight: bold;
+    &:not(:first-of-type) {
+      margin-left: 30px;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    p{
+        &:hover{
+            color:white;
+        }
+        margin-left: 10px;
+        font-size: 20px;
+    }
+  }
+}
+.dropDown {
+  padding: 0 150px;
+  position: relative;
+  background-color: white;
+  ul {
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a{
-        color:lightgray;
+    li {
+        color:black;
         font-weight: bold;
-        &:not(:first-of-type)
-        {
-            margin-left: 30px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        &:hover ul{
+            height: 120px;
+            color: rgb(105, 25, 25);
         }
-    }
-    &.sec{
-        background-color: white;
-        a{
-            color:rgb(76, 71, 94);
-            font-weight: bold;
-        }
-    }
+      &:hover ul li {
+        display: block;
+        width: 130px;
+        text-align: center;
+      }
+      ul {
+        border-top: 2px solid rgb(105, 25, 25);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding:0;
+        background-color: rgba(241, 244, 247, 0.6);
+        height: 0px;
+        transition: height 0.2s ease-in-out;
 
+        li {
+          padding: 10px 0;
+          display: none;
+          &:hover {
+            background-color: rgba(105, 25, 25,0.5);
+
+          }
+          a{
+            color: black;
+            font-weight:bolder;
+        }
+        }
+      }
+    }
+  }
 }
-.heroImage{
+
+.heroImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  background-image: url("/images/heroImgLanding.jpg");
+  background-size: cover;
+  background-color: rgba(255, 255, 255,0.1);
+  background-blend-mode: overlay;
+  height: 500px;
+  padding: 5px;
+  .learn{
+    background-color: white;
+    font-size: 25;
+    color: black;
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+.discover{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    background-color: rgb(253, 251, 251);
+    width: 900px;
+    text-align: center;
+}
+  .container {
+    width: 800px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+    input {
+      width: 400px;
+      padding: 10px 10px;
+      margin-top: 80px;
+    //   border-radius: 30px;
+      background-color:rgba(255, 255, 255, 0.8);
+      color: black;
+      font-weight: bold;
+      text-align: center;
+      &::placeholder{
+          font-weight: bold;
+          letter-spacing: 3px;
+          text-align: center;
+          color: black;
+      }
+      &:focus{
+          background-color: rgba(105, 25, 25,0.3);
+          &::placeholder{
+              color:white;
+          }
+          color: white;
+
+      }
+    }
+    .searchBtn {
+          background-color: white;
+        //   border-radius: 30px;
+          padding: 8px 40px;
+          font-weight: bold;
+          color: black;
+          font-size: 15px;
+          letter-spacing: 2px;
+}
+  }
+
+section {
+  .textCarousel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    .title{
+          font-size: 25px;
+          margin-bottom: 20px;
+          letter-spacing: 5px;
+          background-color: rgb(105, 25, 25);
+          width: 900px;
+          text-align: center;
+    }
+    .subTitle{
+         background-color: rgb(105, 25, 25);
+          font-size: 16px;
+          border: 1px solid white;
+          padding: 2px 20px;
+    }
+  }
+  .carousel {
+    margin: 10px 100px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
-    height: 500px;
-    padding: 5;
-    .container{
-        width: 800px;
-        height: 250px;
-        border: 2px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        a{
-            &:first-child{
-                padding-bottom: 50px;
-            }
-            &:nth-child(2){
-                padding-bottom: 10px;
-            }
+    .arrow{
+        img{
+            height: 40px;
+            width: 40px;
         }
-        input{
-            width: 400px;
-            padding: 5px 0;
+        &.a:hover{
+            transform: translate(-3px, 0);
         }
-        button{
-            padding: 5px 25px;
+        &.b:hover{
+            transform: translate(3px, 0);
         }
     }
+
+    .slide1 {
+        border: 1px solid black;
+      box-shadow: 6px 5px rgba(105, 25, 25,0.5);
+      margin-right: 10px;
+      padding-bottom: 30px;
+      img {
+        width: 400px;
+        height: 300px;
+      }
+      p{
+          color:black;
+          font-size: 18px;
+          margin:10px 20px;
+      }
+      a{
+          margin:10px 20px;
+          color: black;
+          padding: 5px 40px;
+          border: 2px solid  black;
+          letter-spacing: 2px;
+      }
+    }
+    .slide2 {
+      border: 1px solid black;
+      box-shadow: 6px 5px rgba(105, 25, 25,0.5);
+      margin-right: 10px;
+      text-align: center;
+      padding-bottom: 30px;
+      img {
+        width: 200px;
+        height: 300px;
+      }
+      p{
+        color:black;
+        font-size: 18px;
+        margin:10px 20px;
+    }
+    a{
+        margin:10px 20px;
+        color: black;
+        padding: 5px 30px;
+        border: 2px solid  black;
+        letter-spacing: 2px;
+    }
+    }
+  }
 }
+section {
+  .heroImage {
+    background-image: url(images/firstHero.jpg);
+    background-size: cover;
+    margin-bottom: 10px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      width: 50%;
+      padding-bottom: 30px;
+    }
+    &.product {
+      height: 300px;
+    }
+  }
+}
+section {
+  .textCarousel {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .secondCarousel {
+    margin: 20px 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+    .slide {
+        box-shadow: 6px 5px rgba(105, 25, 25,0.5);
+        padding-bottom: 20px;
+        margin-right: 20px;
+        border: 1px solid black;
+      img {
+        margin: 10px;
+        width: 200px;
+        height: 250px;
+      }
+      p{
+        color:black;
+        font-size: 18px;
+        margin:10px 20px;
+    }
+    a{
+        margin:10px 20px;
+        color: black;
+        padding: 5px 40px;
+        border: 2px solid  black;
+        letter-spacing: 2px;
+    }
+    
+    }
+  }
+}
+.sec {
+  background-color: lightgray;
+  .grid {
+    padding-bottom: 50px;
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    text-align: center;
+    div {
+      width: 200px;
+      padding-bottom: 40px;
+    }
+    a {
+      color: black;
+      font-weight: bold;
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
+footer {
+  background-color: rgb(105, 25, 25);
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  ul{
+      &:first-child{
+          align-items: flex-start;
+      }
+      img{
+          width: 70px;
+          height:70px;
+      }
+  }
+  li {
+      margin-bottom: 5px;
+}
+.footTitle{
+    color: gray;
+    font-weight: bold;
+}
+}
+
