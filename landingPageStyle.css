@@ -46,7 +46,7 @@ p {
 
 .navigatie {
   padding: 20px 100px;
-  background-color: #161638;
+  background-color: #691919;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,8 +58,47 @@ p {
           align-items: center;
 }
 
+.navigatie :first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigatie .topRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigatie .topRight .iconNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigatie .topRight .iconNav img {
+  width: 30px;
+  height: 30px;
+}
+
+.navigatie .topRight .iconNav p {
+  font-size: 15px;
+}
+
 .navigatie a {
-  color: lightgray;
+  color: white;
   font-weight: bold;
 }
 
@@ -67,13 +106,86 @@ p {
   margin-left: 30px;
 }
 
-.navigatie.sec {
+.navigatie a img {
+  width: 50px;
+  height: 50px;
+}
+
+.navigatie a p {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.navigatie a p:hover {
+  color: white;
+}
+
+.dropDown {
+  padding: 0 150px;
+  position: relative;
   background-color: white;
 }
 
-.navigatie.sec a {
-  color: #4c475e;
+.dropDown ul {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropDown ul li {
+  color: black;
   font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.dropDown ul li:hover ul {
+  height: 120px;
+  color: #691919;
+}
+
+.dropDown ul li:hover ul li {
+  display: block;
+  width: 130px;
+  text-align: center;
+}
+
+.dropDown ul li ul {
+  border-top: 2px solid #691919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  padding: 0;
+  background-color: rgba(241, 244, 247, 0.6);
+  height: 0px;
+  -webkit-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+}
+
+.dropDown ul li ul li {
+  padding: 10px 0;
+  display: none;
+}
+
+.dropDown ul li ul li:hover {
+  background-color: rgba(105, 25, 25, 0.5);
+}
+
+.dropDown ul li ul li a {
+  color: black;
+  font-weight: bolder;
 }
 
 .heroImage {
@@ -87,14 +199,35 @@ p {
       -ms-flex-align: center;
           align-items: center;
   background-color: gray;
+  background-image: url("/images/heroImgLanding.jpg");
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-blend-mode: overlay;
   height: 500px;
-  padding: 5;
+  padding: 5px;
+}
+
+.heroImage .learn {
+  background-color: white;
+  font-size: 25;
+  color: black;
+  border: 1px solid white;
+  padding: 10px 20px;
+}
+
+.heroImage .discover {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  background-color: #fdfbfb;
+  width: 900px;
+  text-align: center;
 }
 
 .heroImage .container {
   width: 800px;
   height: 250px;
-  border: 2px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,20 +243,321 @@ p {
           align-items: center;
 }
 
-.heroImage .container a:first-child {
-  padding-bottom: 50px;
-}
-
-.heroImage .container a:nth-child(2) {
-  padding-bottom: 10px;
-}
-
-.heroImage .container input {
+.heroImage input {
   width: 400px;
-  padding: 5px 0;
+  padding: 10px 10px;
+  margin-top: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }
 
-.heroImage .container button {
-  padding: 5px 25px;
+.heroImage input::-webkit-input-placeholder {
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  color: black;
+}
+
+.heroImage input:-ms-input-placeholder {
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  color: black;
+}
+
+.heroImage input::-ms-input-placeholder {
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  color: black;
+}
+
+.heroImage input::placeholder {
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  color: black;
+}
+
+.heroImage input:focus {
+  background-color: rgba(105, 25, 25, 0.3);
+  color: white;
+}
+
+.heroImage input:focus::-webkit-input-placeholder {
+  color: white;
+}
+
+.heroImage input:focus:-ms-input-placeholder {
+  color: white;
+}
+
+.heroImage input:focus::-ms-input-placeholder {
+  color: white;
+}
+
+.heroImage input:focus::placeholder {
+  color: white;
+}
+
+.heroImage .searchBtn {
+  background-color: white;
+  padding: 8px 40px;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+section .textCarousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+section .textCarousel .title {
+  font-size: 25px;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  background-color: #691919;
+  width: 900px;
+  text-align: center;
+}
+
+section .textCarousel .subTitle {
+  background-color: #691919;
+  font-size: 16px;
+  border: 1px solid white;
+  padding: 2px 20px;
+}
+
+section .carousel {
+  margin: 10px 100px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .carousel .arrow img {
+  height: 40px;
+  width: 40px;
+}
+
+section .carousel .arrow.a:hover {
+  -webkit-transform: translate(-3px, 0);
+          transform: translate(-3px, 0);
+}
+
+section .carousel .arrow.b:hover {
+  -webkit-transform: translate(3px, 0);
+          transform: translate(3px, 0);
+}
+
+section .carousel .slide1 {
+  border: 1px solid black;
+  -webkit-box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
+          box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
+  margin-right: 10px;
+  padding-bottom: 30px;
+}
+
+section .carousel .slide1 img {
+  width: 400px;
+  height: 300px;
+}
+
+section .carousel .slide1 p {
+  color: black;
+  font-size: 18px;
+  margin: 10px 20px;
+}
+
+section .carousel .slide1 a {
+  margin: 10px 20px;
+  color: black;
+  padding: 5px 40px;
+  border: 2px solid  black;
+  letter-spacing: 2px;
+}
+
+section .carousel .slide2 {
+  border: 1px solid black;
+  -webkit-box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
+          box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
+  margin-right: 10px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+section .carousel .slide2 img {
+  width: 200px;
+  height: 300px;
+}
+
+section .carousel .slide2 p {
+  color: black;
+  font-size: 18px;
+  margin: 10px 20px;
+}
+
+section .carousel .slide2 a {
+  margin: 10px 20px;
+  color: black;
+  padding: 5px 30px;
+  border: 2px solid  black;
+  letter-spacing: 2px;
+}
+
+section .heroImage {
+  background-image: url(images/firstHero.jpg);
+  background-size: cover;
+  margin-bottom: 10px;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .heroImage p {
+  width: 50%;
+  padding-bottom: 30px;
+}
+
+section .heroImage.product {
+  height: 300px;
+}
+
+section .textCarousel {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+section .secondCarousel {
+  margin: 20px 100px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .secondCarousel .slide {
+  -webkit-box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
+          box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
+  padding-bottom: 20px;
+  margin-right: 20px;
+  border: 1px solid black;
+}
+
+section .secondCarousel .slide img {
+  margin: 10px;
+  width: 200px;
+  height: 250px;
+}
+
+section .secondCarousel .slide p {
+  color: black;
+  font-size: 18px;
+  margin: 10px 20px;
+}
+
+section .secondCarousel .slide a {
+  margin: 10px 20px;
+  color: black;
+  padding: 5px 40px;
+  border: 2px solid  black;
+  letter-spacing: 2px;
+}
+
+.sec {
+  background-color: lightgray;
+}
+
+.sec .grid {
+  padding-bottom: 50px;
+  margin: 0 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+  text-align: center;
+}
+
+.sec .grid div {
+  width: 200px;
+  padding-bottom: 40px;
+}
+
+.sec .grid a {
+  color: black;
+  font-weight: bold;
+}
+
+.sec .grid a img {
+  width: 200px;
+}
+
+footer {
+  background-color: #691919;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul:first-child {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer ul img {
+  width: 70px;
+  height: 70px;
+}
+
+footer li {
+  margin-bottom: 5px;
+}
+
+footer .footTitle {
+  color: gray;
+  font-weight: bold;
 }
 /*# sourceMappingURL=landingPageStyle.css.map */
