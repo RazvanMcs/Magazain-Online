@@ -44,6 +44,52 @@ p {
           box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+:-ms-input-placeholder {
+  color: lightgray;
+}
+
+::-ms-input-placeholder {
+  color: lightgray;
+}
+
+::placeholder {
+  color: lightgray;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .navigatie {
   padding: 20px 100px;
   background-color: #691919;
@@ -560,4 +606,158 @@ footer .footTitle {
   color: gray;
   font-weight: bold;
 }
-/*# sourceMappingURL=landingPageStyle.css.map */
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 15px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #691919;
+}
+
+.search input {
+  margin-top: 0px;
+}
+
+.search .searchBtn {
+  background-color: rgba(105, 25, 25, 0.3);
+}
+
+.dropDown ul li ul {
+  background-color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 50px;
+}
+
+.left {
+  padding: 10px;
+  height: 400px;
+  min-width: 200px;
+  border: 2px solid #691919;
+}
+
+.right {
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.right h1 {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.right label {
+  margin-left: 20px;
+}
+
+.right .gridProductPage {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  margin: 10px;
+}
+
+.right .gridProductPage div {
+  position: relative;
+  width: 300px;
+  border: 2px solid #691919;
+  border-radius: 10px;
+}
+
+.right .gridProductPage div:hover .hoverItems a {
+  display: block;
+}
+
+.right .gridProductPage div img {
+  width: 298px;
+  height: 150px;
+  border-radius: 8px 8px 0 0;
+}
+
+.right .gridProductPage div p {
+  margin: 10px;
+}
+
+.right .gridProductPage div .price {
+  font-weight: bold;
+}
+
+.right .gridProductPage div .hoverItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0;
+  position: absolute;
+}
+
+.right .gridProductPage div .hoverItems a {
+  display: none;
+  border: 2px solid #691919;
+  padding: 5px 20px;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.right .gridProductPage div .hoverItems a:nth-child(2):hover {
+  background-color: rgba(58, 117, 58, 0.5);
+  border: 2px solid green;
+}
+
+.right .gridProductPage div .hoverItems a:first-child:hover {
+  background-color: rgba(240, 240, 240, 0.5);
+}
+
+.pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.pagination a {
+  border: 1px solid #691919;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.pagination a:hover {
+  background-color: rgba(105, 25, 25, 0.5);
+}
+
+.pagination a:active {
+  background-color: #691919;
+}
+/*# sourceMappingURL=productsOverviewStyle.css.map */
