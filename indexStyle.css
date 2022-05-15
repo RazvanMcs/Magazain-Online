@@ -110,15 +110,15 @@ p {
   margin: 15px 0px;
 }
 
-.container .subContainer .leftSide button {
+.container .subContainer .leftSide .seeMore {
   border: 1px solid lightgray;
   color: lightgray;
-  background-color: transparent;
+  background-color: none;
   padding: 5px 35px;
   cursor: pointer;
 }
 
-.container .subContainer .leftSide button:hover {
+.container .subContainer .leftSide .seeMore:hover {
   background-color: rgba(165, 160, 160, 0.3);
 }
 

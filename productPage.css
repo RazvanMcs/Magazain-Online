@@ -206,97 +206,6 @@ p {
   font-weight: bolder;
 }
 
-section .textCarousel {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-}
-
-section .textCarousel .title {
-  font-size: 25px;
-  margin-bottom: 20px;
-  letter-spacing: 5px;
-  background-color: #691919;
-  width: 900px;
-  text-align: center;
-}
-
-section .textCarousel .subTitle {
-  background-color: #691919;
-  font-size: 16px;
-  border: 1px solid white;
-  padding: 2px 20px;
-}
-
-section .secondCarousel {
-  margin: 20px 100px;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section .secondCarousel .arrow img {
-  height: 40px;
-  width: 40px;
-}
-
-section .secondCarousel .arrow.a:hover {
-  -webkit-transform: translate(-3px, 0);
-          transform: translate(-3px, 0);
-}
-
-section .secondCarousel .arrow.b:hover {
-  -webkit-transform: translate(3px, 0);
-          transform: translate(3px, 0);
-}
-
-section .secondCarousel .slide {
-  -webkit-box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-          box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-  padding-bottom: 20px;
-  margin-right: 20px;
-  border: 1px solid black;
-}
-
-section .secondCarousel .slide img {
-  margin: 10px;
-  width: 200px;
-  height: 250px;
-}
-
-section .secondCarousel .slide p {
-  font-size: 18px;
-  margin: 10px 20px;
-}
-
-section .secondCarousel .slide a {
-  margin: 10px 20px;
-  padding: 5px 40px;
-  border: 2px solid black;
-  letter-spacing: 2px;
-}
-
 footer {
   background-color: #691919;
   height: 200px;
@@ -399,23 +308,7 @@ footer .footTitle {
   letter-spacing: 2px;
 }
 
-.backUp {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 600px;
-  margin-left: 10px;
-}
-
-.backUp img {
-  width: 40px;
-}
-
-.backUp img:hover {
-  border-radius: 30px;
-  background-color: white;
-}
-
-.heroImage {
+.search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,52 +318,23 @@ footer .footTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: gray;
-  background-image: url("/images/heroImgLanding.jpg");
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.1);
-  background-blend-mode: overlay;
-  height: 500px;
-  padding: 5px;
+  margin: 15px 15px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid #691919;
 }
 
-.heroImage .learn {
-  background-color: white;
-  font-size: 25;
-  color: black;
-  border: 1px solid white;
-  padding: 10px 20px;
+.search input {
+  margin-top: 0px;
 }
 
-.heroImage .discover {
-  font-size: 30px;
-  color: black;
-  margin-bottom: 20px;
-  letter-spacing: 5px;
-  background-color: #fdfbfb;
-  width: 900px;
-  text-align: center;
-}
-
-.heroImage .container {
-  width: 800px;
-  height: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.search .searchBtn {
+  background-color: rgba(105, 25, 25, 0.3);
 }
 
 section .textCarousel {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -503,9 +367,9 @@ section .textCarousel .subTitle {
   padding: 2px 20px;
 }
 
-section .carousel {
-  margin: 10px 100px;
-  height: 450px;
+section .secondCarousel {
+  margin: 20px 100px;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,132 +381,182 @@ section .carousel {
           align-items: center;
 }
 
-section .carousel .arrow img {
+section .secondCarousel .arrow img {
   height: 40px;
   width: 40px;
 }
 
-section .carousel .arrow.a:hover {
+section .secondCarousel .arrow.a:hover {
   -webkit-transform: translate(-3px, 0);
           transform: translate(-3px, 0);
 }
 
-section .carousel .arrow.b:hover {
+section .secondCarousel .arrow.b:hover {
   -webkit-transform: translate(3px, 0);
           transform: translate(3px, 0);
 }
 
-section .carousel .slide1 {
-  border: 1px solid black;
+section .secondCarousel .slide {
   -webkit-box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
           box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-  margin-right: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  border: 1px solid black;
 }
 
-section .carousel .slide1 img {
-  width: 400px;
-  height: 300px;
+section .secondCarousel .slide img {
+  margin: 10px;
+  width: 200px;
+  height: 250px;
 }
 
-section .carousel .slide1 p {
+section .secondCarousel .slide p {
   font-size: 18px;
   margin: 10px 20px;
 }
 
-section .carousel .slide1 a {
+section .secondCarousel .slide a {
   margin: 10px 20px;
   padding: 5px 40px;
   border: 2px solid black;
   letter-spacing: 2px;
 }
 
-section .carousel .slide2 {
-  border: 1px solid black;
-  -webkit-box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-          box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-  margin-right: 10px;
-  text-align: center;
-  padding-bottom: 30px;
+.backUp {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 600px;
+  margin-left: 10px;
 }
 
-section .carousel .slide2 img {
-  width: 200px;
-  height: 300px;
+.backUp img {
+  width: 40px;
 }
 
-section .carousel .slide2 p {
-  font-size: 18px;
-  margin: 10px 20px;
+.backUp img:hover {
+  border-radius: 30px;
+  background-color: white;
 }
 
-section .carousel .slide2 a {
-  margin: 10px 20px;
-  padding: 5px 30px;
-  border: 2px solid black;
-  letter-spacing: 2px;
+.containerAsideProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
 }
 
-section .heroImage {
-  background-image: url(images/firstHero.jpg);
-  background-size: cover;
-  margin-bottom: 10px;
-  text-align: center;
+.containerAsideProduct .leftProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-section .heroImage p {
-  width: 50%;
-  padding-bottom: 30px;
+.containerAsideProduct .leftProduct .bigImg img {
+  width: 550px;
 }
 
-section .heroImage.product {
-  height: 300px;
+.containerAsideProduct .leftProduct .smallImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.sec {
-  border-top: 1px solid black;
-  background-color: #fdf9f9;
+.containerAsideProduct .leftProduct .smallImg img {
+  width: 100px;
+  height: 100px;
 }
 
-.sec .grid {
-  padding-bottom: 50px;
-  margin: 0 100px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  place-items: center;
+.containerAsideProduct .leftProduct .detailsProduct {
+  width: 450px;
+}
+
+.containerAsideProduct .leftProduct .detailsProduct p {
+  margin-bottom: 25px;
+}
+
+.containerAsideProduct .leftProduct #infoStats {
+  margin-bottom: 10px;
+}
+
+.containerAsideProduct .leftProduct .infoStats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.containerAsideProduct .leftProduct .infoStats ul {
+  width: 275px;
+}
+
+.containerAsideProduct .leftProduct .infoStats ul li {
+  border: 1px solid #691919;
+  padding: 5px 10px;
+}
+
+.containerAsideProduct .leftProduct .infoStats .secondUl li {
+  text-align: end;
+  color: gray;
+}
+
+.rightProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  height: 305px;
+  border: 1px solid #691919;
+}
+
+.rightProduct div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.rightProduct a {
+  color: black;
+  padding: 10px 10px;
+}
+
+.rightProduct p {
+  padding: 5px 10px;
+}
+
+.rightProduct .cart {
+  margin: 40px 10px;
+  background-color: #3bbb3b;
   text-align: center;
-}
-
-.sec .grid div {
-  width: 200px;
-  padding-bottom: 40px;
-}
-
-.sec .grid a {
+  color: white;
   font-weight: bold;
 }
 
-.sec .grid a img {
-  width: 200px;
+.rightProduct .cart:hover {
+  background-color: green;
 }
 
-.clickable {
-  color: black;
+.rightProduct .aLinked {
+  border-top: 1px solid #691919;
 }
-
-.clickable:hover {
-  background-color: #691919;
-  color: white;
-}
-/*# sourceMappingURL=landingPageStyle.css.map */
+/*# sourceMappingURL=productPage.css.map */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="indexMobileStyle.css">
     <title>Sign Up</title>
 </head>
+
 <body>
     <main>
         <div class="container">
@@ -16,7 +18,7 @@
                 <div class="leftSide">
                     <p class="bigFont"><a href="landingPage.html">CLASIC CARS</a> </p>
                     <p class="mediumFont">Drive your dream</p>
-                    <button>FOR SELLERS</button>
+                    <a class="seeMore" href="productsOverview.html">SEE MORE</a>
                 </div>
                 <div class="rightSide">
                     <img src="images/wheelSignUp.png" alt="Wheel icon">
@@ -24,20 +26,20 @@
                     <div class="form">
                         <form id="signUpForm" action="#">
                             <ul>
-                                <li tabindex:"0";><label for="formFirstName">First Name</label><br><input type="text" name="userFirstName" placeholder="First Name" required id="formFirstName"></li>
+                                <li tabindex: "0";><label for="formFirstName">First Name</label><br><input type="text" name="userFirstName" placeholder="First Name" required id="formFirstName"></li>
 
-                                <li tabindex:"0";><label for="formLastName">Last Name</label><br><input type="text" name="userLastName" placeholder="Last Name" required id="formLastName"></li>
+                                <li tabindex: "0";><label for="formLastName">Last Name</label><br><input type="text" name="userLastName" placeholder="Last Name" required id="formLastName"></li>
 
-                                <li tabindex:"0";><label for="formEmail">Email</label><br><input type="email" name="userEmail" placeholder="example@gmail.com" required id="formEmail"></li>
+                                <li tabindex: "0";><label for="formEmail">Email</label><br><input type="email" name="userEmail" placeholder="example@gmail.com" required id="formEmail"></li>
 
-                                <li tabindex:"0";><label for="formPassword">Password</label><br><input type="userPassword" name="userPassword" placeholder="******" required id="formPassword"></li>
+                                <li tabindex: "0";><label for="formPassword">Password</label><br><input type="password" name="userPassword" placeholder="******" required id="formPassword" minlength="8"></li>
 
-                                <li tabindex:"0";><label for="formCity">City</label><br><input type="text" name="userCity" placeholder="City" required id="formCity"></li>
+                                <li tabindex: "0";><label for="formCity">City</label><br><input type="text" name="userCity" placeholder="City" required id="formCity"></li>
 
-                                <li tabindex:"0";><label for="formCountry">Country</label><br><input type="text" name="useruserountry" placeholder="Country" required id="formCountry"></li>
+                                <li tabindex: "0";><label for="formCountry">Country</label><br><input type="text" name="useruserountry" placeholder="Country" required id="formCountry"></li>
                             </ul>
                         </form>
-                       
+
                     </div>
                     <input class="subBut" type="submit" value="Sign Up" form="signUpForm">
                     <a class="toSignIn" href="signIn.html">Already have an acount? Sign in!</a>
@@ -48,4 +50,5 @@
         </div>
     </main>
 </body>
+
 </html>

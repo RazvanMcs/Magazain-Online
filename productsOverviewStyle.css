@@ -44,52 +44,6 @@ p {
           box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-::-webkit-input-placeholder {
-  color: lightgray;
-}
-
-:-ms-input-placeholder {
-  color: lightgray;
-}
-
-::-ms-input-placeholder {
-  color: lightgray;
-}
-
-::placeholder {
-  color: lightgray;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .navigatie {
   padding: 20px 100px;
   background-color: #691919;
@@ -144,7 +98,7 @@ p {
 }
 
 .navigatie a {
-  color: white;
+  color: lightgray;
   font-weight: bold;
 }
 
@@ -167,13 +121,14 @@ p {
 }
 
 .dropDown {
-  padding: 0 150px;
+  border-bottom: 1px solid #691919;
+  padding: 10px 150px;
   position: relative;
   background-color: white;
 }
 
 .dropDown ul {
-  padding: 15px 0;
+  padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,6 +138,19 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.dropDown ul .all {
+  padding-bottom: 1px;
+  border-bottom: 1px solid white;
+}
+
+.dropDown ul .all a {
+  color: black;
+}
+
+.dropDown ul .all:hover {
+  border-bottom: 1px solid #691919;
 }
 
 .dropDown ul li {
@@ -214,7 +182,7 @@ p {
           flex-direction: column;
   position: absolute;
   padding: 0;
-  background-color: rgba(241, 244, 247, 0.6);
+  background-color: white;
   height: 0px;
   -webkit-transition: height 0.2s ease-in-out;
   transition: height 0.2s ease-in-out;
@@ -226,12 +194,50 @@ p {
 }
 
 .dropDown ul li ul li:hover {
-  background-color: rgba(105, 25, 25, 0.5);
+  background-color: #691919;
+}
+
+.dropDown ul li ul li:hover a {
+  color: white;
 }
 
 .dropDown ul li ul li a {
   color: black;
   font-weight: bolder;
+}
+
+footer {
+  background-color: #691919;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul:first-child {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer ul img {
+  width: 70px;
+  height: 70px;
+}
+
+footer li {
+  margin-bottom: 5px;
+}
+
+footer .footTitle {
+  color: gray;
+  font-weight: bold;
 }
 
 .search input {
@@ -302,311 +308,6 @@ p {
   letter-spacing: 2px;
 }
 
-.heroImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: gray;
-  background-image: url("/images/heroImgLanding.jpg");
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.1);
-  background-blend-mode: overlay;
-  height: 500px;
-  padding: 5px;
-}
-
-.heroImage .learn {
-  background-color: white;
-  font-size: 25;
-  color: black;
-  border: 1px solid white;
-  padding: 10px 20px;
-}
-
-.heroImage .discover {
-  font-size: 30px;
-  color: black;
-  margin-bottom: 20px;
-  letter-spacing: 5px;
-  background-color: #fdfbfb;
-  width: 900px;
-  text-align: center;
-}
-
-.heroImage .container {
-  width: 800px;
-  height: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section .textCarousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-}
-
-section .textCarousel .title {
-  font-size: 25px;
-  margin-bottom: 20px;
-  letter-spacing: 5px;
-  background-color: #691919;
-  width: 900px;
-  text-align: center;
-}
-
-section .textCarousel .subTitle {
-  background-color: #691919;
-  font-size: 16px;
-  border: 1px solid white;
-  padding: 2px 20px;
-}
-
-section .carousel {
-  margin: 10px 100px;
-  height: 450px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section .carousel .arrow img {
-  height: 40px;
-  width: 40px;
-}
-
-section .carousel .arrow.a:hover {
-  -webkit-transform: translate(-3px, 0);
-          transform: translate(-3px, 0);
-}
-
-section .carousel .arrow.b:hover {
-  -webkit-transform: translate(3px, 0);
-          transform: translate(3px, 0);
-}
-
-section .carousel .slide1 {
-  border: 1px solid black;
-  -webkit-box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-          box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-  margin-right: 10px;
-  padding-bottom: 30px;
-}
-
-section .carousel .slide1 img {
-  width: 400px;
-  height: 300px;
-}
-
-section .carousel .slide1 p {
-  color: black;
-  font-size: 18px;
-  margin: 10px 20px;
-}
-
-section .carousel .slide1 a {
-  margin: 10px 20px;
-  color: black;
-  padding: 5px 40px;
-  border: 2px solid black;
-  letter-spacing: 2px;
-}
-
-section .carousel .slide2 {
-  border: 1px solid black;
-  -webkit-box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-          box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-  margin-right: 10px;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-section .carousel .slide2 img {
-  width: 200px;
-  height: 300px;
-}
-
-section .carousel .slide2 p {
-  color: black;
-  font-size: 18px;
-  margin: 10px 20px;
-}
-
-section .carousel .slide2 a {
-  margin: 10px 20px;
-  color: black;
-  padding: 5px 30px;
-  border: 2px solid black;
-  letter-spacing: 2px;
-}
-
-section .heroImage {
-  background-image: url(images/firstHero.jpg);
-  background-size: cover;
-  margin-bottom: 10px;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-section .heroImage p {
-  width: 50%;
-  padding-bottom: 30px;
-}
-
-section .heroImage.product {
-  height: 300px;
-}
-
-section .textCarousel {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-section .secondCarousel {
-  margin: 20px 100px;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-section .secondCarousel .slide {
-  -webkit-box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-          box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-  padding-bottom: 20px;
-  margin-right: 20px;
-  border: 1px solid black;
-}
-
-section .secondCarousel .slide img {
-  margin: 10px;
-  width: 200px;
-  height: 250px;
-}
-
-section .secondCarousel .slide p {
-  color: black;
-  font-size: 18px;
-  margin: 10px 20px;
-}
-
-section .secondCarousel .slide a {
-  margin: 10px 20px;
-  color: black;
-  padding: 5px 40px;
-  border: 2px solid black;
-  letter-spacing: 2px;
-}
-
-.sec {
-  background-color: lightgray;
-}
-
-.sec .grid {
-  padding-bottom: 50px;
-  margin: 0 100px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  place-items: center;
-  text-align: center;
-}
-
-.sec .grid div {
-  width: 200px;
-  padding-bottom: 40px;
-}
-
-.sec .grid a {
-  color: black;
-  font-weight: bold;
-}
-
-.sec .grid a img {
-  width: 200px;
-}
-
-footer {
-  background-color: #691919;
-  height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer ul:first-child {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-footer ul img {
-  width: 70px;
-  height: 70px;
-}
-
-footer li {
-  margin-bottom: 5px;
-}
-
-footer .footTitle {
-  color: gray;
-  font-weight: bold;
-}
-
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -618,7 +319,7 @@ footer .footTitle {
       -ms-flex-align: center;
           align-items: center;
   margin: 15px 15px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   border-bottom: 3px solid #691919;
 }
 
@@ -630,7 +331,19 @@ footer .footTitle {
   background-color: rgba(105, 25, 25, 0.3);
 }
 
-.dropDown ul li ul {
+.backUp {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 600px;
+  margin-left: 10px;
+}
+
+.backUp img {
+  width: 40px;
+}
+
+.backUp img:hover {
+  border-radius: 30px;
   background-color: white;
 }
 
@@ -720,7 +433,6 @@ footer .footTitle {
 
 .right .gridProductPage div .hoverItems a {
   display: none;
-  border: 2px solid #691919;
   padding: 5px 20px;
   margin-bottom: 30px;
   color: white;
@@ -728,8 +440,7 @@ footer .footTitle {
 }
 
 .right .gridProductPage div .hoverItems a:nth-child(2):hover {
-  background-color: rgba(58, 117, 58, 0.5);
-  border: 2px solid green;
+  background-color: rgba(32, 112, 32, 0.63);
 }
 
 .right .gridProductPage div .hoverItems a:first-child:hover {

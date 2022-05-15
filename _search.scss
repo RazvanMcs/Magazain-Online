@@ -1,0 +1,15 @@
+@import 'mainSearch';
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid rgb(105, 25, 25);
+    input {
+        margin-top: 0px;
+    }
+    .searchBtn {
+        background-color: rgba(105, 25, 25, 0.3);
+    }
+}

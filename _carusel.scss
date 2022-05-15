@@ -1,0 +1,66 @@
+section {
+    .textCarousel {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        .title {
+            font-size: 25px;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+            background-color: rgb(105, 25, 25);
+            width: 900px;
+            text-align: center;
+        }
+        .subTitle {
+            background-color: rgb(105, 25, 25);
+            font-size: 16px;
+            border: 1px solid white;
+            padding: 2px 20px;
+        }
+    }
+    .secondCarousel {
+        margin: 20px 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .arrow {
+            img {
+                height: 40px;
+                width: 40px;
+            }
+            &.a:hover {
+                transform: translate(-3px, 0);
+            }
+            &.b:hover {
+                transform: translate(3px, 0);
+            }
+        }
+        .slide {
+            box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
+            padding-bottom: 20px;
+            margin-right: 20px;
+            border: 1px solid black;
+            img {
+                margin: 10px;
+                width: 200px;
+                height: 250px;
+            }
+            p {
+                font-size: 18px;
+                margin: 10px 20px;
+            }
+            a {
+                margin: 10px 20px;
+                padding: 5px 40px;
+                border: 2px solid black;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

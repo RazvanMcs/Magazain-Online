@@ -1,0 +1,107 @@
+.navigatie {
+    padding: 20px 100px;
+    background-color: rgb(105, 25, 25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     :first-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topRight {
+        display: flex;
+        .iconNav {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+            p {
+                font-size: 15px;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    a {
+        color: lightgray;
+        font-weight: bold;
+        &:not(:first-of-type) {
+            margin-left: 30px;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        p {
+            &:hover {
+                color: white;
+            }
+            margin-left: 10px;
+            font-size: 20px;
+        }
+    }
+}
+
+.dropDown {
+    border-bottom: 1px solid rgb(105, 25, 25);
+    padding: 10px 150px;
+    position: relative;
+    background-color: white;
+    ul {
+        .all {
+            a {
+                color: black;
+            }
+            padding-bottom: 1px;
+            border-bottom: 1px solid white;
+            &:hover {
+                border-bottom: 1px solid rgb(105, 25, 25);
+            }
+        }
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            color: black;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+            &:hover ul {
+                height: 120px;
+                color: rgb(105, 25, 25);
+            }
+            &:hover ul li {
+                display: block;
+                width: 130px;
+                text-align: center;
+            }
+            ul {
+                border-top: 2px solid rgb(105, 25, 25);
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                padding: 0;
+                background-color: white;
+                height: 0px;
+                transition: height 0.2s ease-in-out;
+                li {
+                    padding: 10px 0;
+                    display: none;
+                    &:hover {
+                        background-color: rgb(105, 25, 25);
+                        a {
+                            color: white;
+                        }
+                    }
+                    a {
+                        color: black;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+}
