@@ -1,3 +1,5 @@
+@import 'colors';
+@import 'fontSize';
 .search {
     input {
         width: 400px;
@@ -5,30 +7,30 @@
         margin-top: 80px;
         //   border-radius: 30px;
         background-color: rgba(255, 255, 255, 0.8);
-        color: black;
+        color: $black;
         font-weight: bold;
         text-align: center;
         &::placeholder {
             font-weight: bold;
             letter-spacing: 3px;
             text-align: center;
-            color: black;
+            color: $black;
         }
         &:focus {
-            background-color: rgba(105, 25, 25, 0.3);
+            background-color: $baseColor;
             &::placeholder {
-                color: white;
+                color: $white;
             }
-            color: white;
+            color: $white;
         }
     }
     .searchBtn {
-        background-color: white;
+        background-color: $white;
         //   border-radius: 30px;
-        padding: 8px 40px;
+        padding: 10px 40px;
         font-weight: bold;
-        color: black;
-        font-size: 15px;
+        color: $black;
+        font-size: $h4;
         letter-spacing: 2px;
     }
 }

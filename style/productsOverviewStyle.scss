@@ -1,8 +1,10 @@
-@import 'generalCss';
-@import 'navigatieHeader';
-@import 'footer';
-@import 'search';
-@import 'backUp';
+@import '../partials//generalCss';
+@import '../partials//navigatieHeader';
+@import '../partials//footer';
+@import '../partials//search';
+@import '../partials//backUp';
+@import '../partials/fontSize';
+@import '../partials/colors';
 .container {
     display: flex;
     margin: 40px 50px;
@@ -12,7 +14,7 @@
     padding: 10px;
     height: 400px;
     min-width: 200px;
-    border: 2px solid rgb(105, 25, 25);
+    border: 2px solid $baseColor;
 }
 
 .right {
@@ -35,7 +37,7 @@
         div {
             position: relative;
             width: 300px;
-            border: 2px solid rgb(105, 25, 25);
+            border: 2px solid $baseColor;
             border-radius: 10px;
             &:hover .hoverItems a {
                 display: block;
@@ -63,13 +65,13 @@
                     display: none;
                     padding: 5px 20px;
                     margin-bottom: 30px;
-                    color: white;
+                    color: $white;
                     font-weight: bold;
                     &:nth-child(2):hover {
-                        background-color: rgba(32, 112, 32, 0.63);
+                        background-color: $buttonColorOpacity;
                     }
                     &:first-child:hover {
-                        background-color: rgba(240, 240, 240, 0.5);
+                        background-color: $darkShadowOpacity;
                     }
                 }
             }
@@ -82,15 +84,15 @@
     display: flex;
     padding-bottom: 20px;
     a {
-        border: 1px solid rgb(105, 25, 25);
+        border: 1px solid $baseColor;
         padding: 5px 10px;
-        font-size: 20px;
-        color: black;
+        font-size: $h2;
+        color: $black;
         &:hover {
-            background-color: rgba(105, 25, 25, 0.5);
+            background-color: $baseColorOpacity;
         }
         &:active {
-            background-color: rgb(105, 25, 25);
+            background-color: $baseColor;
         }
     }
 }

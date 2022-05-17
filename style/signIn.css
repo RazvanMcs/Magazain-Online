@@ -24,19 +24,65 @@ p {
 }
 
 ::-webkit-input-placeholder {
-  color: lightgray;
+  color: #e9e9e9;
 }
 
 :-ms-input-placeholder {
-  color: lightgray;
+  color: #e9e9e9;
 }
 
 ::-ms-input-placeholder {
-  color: lightgray;
+  color: #e9e9e9;
 }
 
 ::placeholder {
-  color: lightgray;
+  color: #e9e9e9;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+::-webkit-input-placeholder {
+  color: #e9e9e9;
+}
+
+:-ms-input-placeholder {
+  color: #e9e9e9;
+}
+
+::-ms-input-placeholder {
+  color: #e9e9e9;
+}
+
+::placeholder {
+  color: #e9e9e9;
 }
 
 * {
@@ -71,7 +117,7 @@ p {
           align-items: center;
   -webkit-box-shadow: 5px 5px lightgray;
           box-shadow: 5px 5px lightgray;
-  border: 2px solid gray;
+  border: 2px solid #691919;
 }
 
 .container .subContainer .leftSide {
@@ -92,9 +138,9 @@ p {
           box-sizing: border-box;
   width: 350px;
   height: 450px;
-  background-image: url(images/signUpCar2.jpg);
+  background-image: url("../images/signUpCar2.jpg");
   background-size: cover;
-  background-color: rgba(38, 5, 77, 0.5);
+  background-color: rgba(105, 25, 25, 0.5);
   background-blend-mode: multiply;
 }
 
@@ -115,6 +161,7 @@ p {
   color: lightgray;
   background-color: none;
   padding: 5px 35px;
+  font-size: 17px;
   cursor: pointer;
 }
 
@@ -174,7 +221,7 @@ p {
 }
 
 .container .subContainer .rightSide ul li :focus {
-  background-color: #9b9b9b;
+  background-color: gray;
 }
 
 .container .subContainer .rightSide ul li input {
@@ -192,13 +239,13 @@ p {
   color: white;
   background-color: #4eac4e;
   font-weight: bold;
-  -webkit-box-shadow: 5px 5px #b3afaf;
-          box-shadow: 5px 5px #b3afaf;
+  -webkit-box-shadow: 5px 5px gray;
+          box-shadow: 5px 5px gray;
 }
 
 .container .subContainer .rightSide .subBut:hover {
-  -webkit-box-shadow: 5px 3px #b3afaf;
-          box-shadow: 5px 3px #b3afaf;
+  -webkit-box-shadow: 5px 3px gray;
+          box-shadow: 5px 3px gray;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
@@ -212,4 +259,15 @@ p {
 .container .subContainer .rightSide .toSignIn:hover {
   border-bottom: 1px solid #4eac4e;
 }
-/*# sourceMappingURL=indexStyle.css.map */
+
+.container .subContainer .rightSide ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .subContainer .rightSide {
+  width: 350px;
+}
+/*# sourceMappingURL=signIn.css.map */

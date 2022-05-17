@@ -1,4 +1,6 @@
-@import 'generalCss';
+@import '../partials/generalCss';
+@import '../partials/colors';
+@import '../partials/fontSize';
 .container {
     margin: auto;
     width: 100vw;
@@ -10,8 +12,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 5px 5px lightgray;
-        border: 2px solid gray;
+        box-shadow: 5px 5px $shadow;
+        border: 2px solid $baseColor;
         .leftSide {
             display: flex;
             flex-direction: column;
@@ -20,25 +22,26 @@
             box-sizing: border-box;
             width: 350px;
             height: 450px;
-            background-image: url(images/signUpCar2.jpg);
+            background-image: url('../images/signUpCar2.jpg');
             background-size: cover;
-            background-color: rgba(38, 5, 77, 0.5);
+            background-color: $baseColorOpacity;
             background-blend-mode: multiply;
             .bigFont {
-                font-size: 30px;
+                font-size: $h1;
                 font-weight: bold;
                 letter-spacing: 3px;
             }
             .mediumFont {
-                font-size: 20px;
-                color: lightgray;
+                font-size: $h2;
+                color: $shadow;
                 margin: 15px 0px;
             }
             .seeMore {
-                border: 1px solid lightgray;
-                color: lightgray;
+                border: 1px solid $shadow;
+                color: $shadow;
                 background-color: none;
                 padding: 5px 35px;
+                font-size: $h3;
                 cursor: pointer;
                 &:hover {
                     background-color: rgba(165, 160, 160, 0.3);
@@ -49,7 +52,7 @@
             box-sizing: border-box;
             width: 500px;
             height: 450px;
-            background-color: rgb(233, 233, 233);
+            background-color: $lightShadow;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -71,13 +74,13 @@
                 align-items: center;
                 li {
                      :focus {
-                        background-color: rgb(155, 155, 155);
+                        background-color: $darkShadow;
                     }
                     padding: 5px 0px;
                     input {
-                        color: black;
+                        color: $black;
                         width: 200px;
-                        border: 1px solid lightgray;
+                        border: 1px solid $shadow;
                     }
                 }
             }
@@ -87,21 +90,21 @@
                 cursor: pointer;
                 margin-top: 10px;
                 border: none;
-                color: white;
-                background-color: rgb(78, 172, 78);
+                color: $white;
+                background-color: $buttonColor;
                 font-weight: bold;
-                box-shadow: 5px 5px rgb(179, 175, 175);
+                box-shadow: 5px 5px $darkShadow;
                 &:hover {
-                    box-shadow: 5px 3px rgb(179, 175, 175);
+                    box-shadow: 5px 3px $darkShadow;
                     transform: translateY(2px);
                 }
             }
             .toSignIn {
                 margin-top: 30px;
-                color: rgb(78, 172, 78);
+                color: $buttonColor;
                 padding-bottom: 3px;
                 &:hover {
-                    border-bottom: 1px solid rgb(78, 172, 78);
+                    border-bottom: 1px solid $buttonColor;
                 }
             }
         }

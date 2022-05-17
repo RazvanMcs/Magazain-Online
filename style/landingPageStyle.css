@@ -24,19 +24,19 @@ p {
 }
 
 ::-webkit-input-placeholder {
-  color: lightgray;
+  color: #e9e9e9;
 }
 
 :-ms-input-placeholder {
-  color: lightgray;
+  color: #e9e9e9;
 }
 
 ::-ms-input-placeholder {
-  color: lightgray;
+  color: #e9e9e9;
 }
 
 ::placeholder {
-  color: lightgray;
+  color: #e9e9e9;
 }
 
 * {
@@ -98,7 +98,7 @@ p {
 }
 
 .navigatie a {
-  color: lightgray;
+  color: #e9e9e9;
   font-weight: bold;
 }
 
@@ -128,7 +128,7 @@ p {
 }
 
 .dropDown ul {
-  padding-top: 15px;
+  padding: 5px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,42 +206,6 @@ p {
   font-weight: bolder;
 }
 
-section .textCarousel {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-}
-
-section .textCarousel .title {
-  font-size: 25px;
-  margin-bottom: 20px;
-  letter-spacing: 5px;
-  background-color: #691919;
-  width: 900px;
-  text-align: center;
-}
-
-section .textCarousel .subTitle {
-  background-color: #691919;
-  font-size: 16px;
-  border: 1px solid white;
-  padding: 2px 20px;
-}
-
 section .secondCarousel {
   margin: 20px 100px;
   text-align: center;
@@ -286,13 +250,13 @@ section .secondCarousel .slide img {
 }
 
 section .secondCarousel .slide p {
-  font-size: 18px;
+  font-size: 17px;
   margin: 10px 20px;
 }
 
 section .secondCarousel .slide a {
   margin: 10px 20px;
-  padding: 5px 40px;
+  padding: 5px 20px;
   border: 2px solid black;
   letter-spacing: 2px;
 }
@@ -327,7 +291,7 @@ footer li {
 }
 
 footer .footTitle {
-  color: gray;
+  color: lightgray;
   font-weight: bold;
 }
 
@@ -370,7 +334,7 @@ footer .footTitle {
 }
 
 .search input:focus {
-  background-color: rgba(105, 25, 25, 0.3);
+  background-color: #691919;
   color: white;
 }
 
@@ -392,7 +356,7 @@ footer .footTitle {
 
 .search .searchBtn {
   background-color: white;
-  padding: 8px 40px;
+  padding: 10px 40px;
   font-weight: bold;
   color: black;
   font-size: 15px;
@@ -402,8 +366,9 @@ footer .footTitle {
 .backUp {
   position: -webkit-sticky;
   position: sticky;
-  top: 600px;
+  top: 400px;
   margin-left: 10px;
+  height: 0;
 }
 
 .backUp img {
@@ -413,6 +378,39 @@ footer .footTitle {
 .backUp img:hover {
   border-radius: 30px;
   background-color: white;
+}
+
+.textCarousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.textCarousel .title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  background-color: #691919;
+  width: 100vw;
+  text-align: center;
+}
+
+.textCarousel .subTitle {
+  background-color: #691919;
+  font-size: 15px;
+  border: 1px solid white;
+  padding: 2px 20px;
 }
 
 .heroImage {
@@ -426,9 +424,9 @@ footer .footTitle {
       -ms-flex-align: center;
           align-items: center;
   background-color: gray;
-  background-image: url("/images/heroImgLanding.jpg");
+  background-image: url("../images/heroImgLanding.jpg");
   background-size: cover;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: gray;
   background-blend-mode: overlay;
   height: 500px;
   padding: 5px;
@@ -436,7 +434,7 @@ footer .footTitle {
 
 .heroImage .learn {
   background-color: white;
-  font-size: 25;
+  font-size: 20px;
   color: black;
   border: 1px solid white;
   padding: 10px 20px;
@@ -447,7 +445,7 @@ footer .footTitle {
   color: black;
   margin-bottom: 20px;
   letter-spacing: 5px;
-  background-color: #fdfbfb;
+  background-color: #691919;
   width: 900px;
   text-align: center;
 }
@@ -468,39 +466,6 @@ footer .footTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-section .textCarousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-}
-
-section .textCarousel .title {
-  font-size: 25px;
-  margin-bottom: 20px;
-  letter-spacing: 5px;
-  background-color: #691919;
-  width: 900px;
-  text-align: center;
-}
-
-section .textCarousel .subTitle {
-  background-color: #691919;
-  font-size: 16px;
-  border: 1px solid white;
-  padding: 2px 20px;
 }
 
 section .carousel {
@@ -534,9 +499,10 @@ section .carousel .arrow.b:hover {
 
 section .carousel .slide1 {
   border: 1px solid black;
-  -webkit-box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-          box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-  margin-right: 10px;
+  -webkit-box-shadow: 6px 5px lightgray;
+          box-shadow: 6px 5px lightgray;
+  margin-right: 40px;
+  margin-left: 40px;
   padding-bottom: 30px;
 }
 
@@ -546,7 +512,7 @@ section .carousel .slide1 img {
 }
 
 section .carousel .slide1 p {
-  font-size: 18px;
+  font-size: 17px;
   margin: 10px 20px;
 }
 
@@ -559,9 +525,9 @@ section .carousel .slide1 a {
 
 section .carousel .slide2 {
   border: 1px solid black;
-  -webkit-box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-          box-shadow: 6px 5px rgba(105, 25, 25, 0.5);
-  margin-right: 10px;
+  -webkit-box-shadow: 6px 5px lightgray;
+          box-shadow: 6px 5px lightgray;
+  margin-right: 40px;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -572,7 +538,7 @@ section .carousel .slide2 img {
 }
 
 section .carousel .slide2 p {
-  font-size: 18px;
+  font-size: 17px;
   margin: 10px 20px;
 }
 
@@ -584,9 +550,8 @@ section .carousel .slide2 a {
 }
 
 section .heroImage {
-  background-image: url(images/firstHero.jpg);
+  background-image: url("../images/firstHero.jpg");
   background-size: cover;
-  margin-bottom: 10px;
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -608,7 +573,7 @@ section .heroImage.product {
 
 .sec {
   border-top: 1px solid black;
-  background-color: #fdf9f9;
+  background-color: #e9e9e9;
 }
 
 .sec .grid {
@@ -616,6 +581,7 @@ section .heroImage.product {
   margin: 0 100px;
   display: -ms-grid;
   display: grid;
+  gap: 10px;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[2];

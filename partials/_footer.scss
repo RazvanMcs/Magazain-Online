@@ -1,5 +1,7 @@
+@import 'colors';
+@import 'fontSize';
 footer {
-    background-color: rgb(105, 25, 25);
+    background-color: $baseColor;
     height: 200px;
     display: flex;
     justify-content: space-evenly;
@@ -17,7 +19,7 @@ footer {
         margin-bottom: 5px;
     }
     .footTitle {
-        color: gray;
+        color: $shadow;
         font-weight: bold;
     }
 }
