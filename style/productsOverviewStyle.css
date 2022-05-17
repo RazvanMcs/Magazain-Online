@@ -24,19 +24,19 @@ p {
 }
 
 ::-webkit-input-placeholder {
-  color: lightgray;
+  color: #e9e9e9;
 }
 
 :-ms-input-placeholder {
-  color: lightgray;
+  color: #e9e9e9;
 }
 
 ::-ms-input-placeholder {
-  color: lightgray;
+  color: #e9e9e9;
 }
 
 ::placeholder {
-  color: lightgray;
+  color: #e9e9e9;
 }
 
 * {
@@ -98,7 +98,7 @@ p {
 }
 
 .navigatie a {
-  color: lightgray;
+  color: #e9e9e9;
   font-weight: bold;
 }
 
@@ -128,7 +128,7 @@ p {
 }
 
 .dropDown ul {
-  padding-top: 15px;
+  padding: 5px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,7 +236,7 @@ footer li {
 }
 
 footer .footTitle {
-  color: gray;
+  color: lightgray;
   font-weight: bold;
 }
 
@@ -279,7 +279,7 @@ footer .footTitle {
 }
 
 .search input:focus {
-  background-color: rgba(105, 25, 25, 0.3);
+  background-color: #691919;
   color: white;
 }
 
@@ -301,7 +301,7 @@ footer .footTitle {
 
 .search .searchBtn {
   background-color: white;
-  padding: 8px 40px;
+  padding: 10px 40px;
   font-weight: bold;
   color: black;
   font-size: 15px;
@@ -328,14 +328,17 @@ footer .footTitle {
 }
 
 .search .searchBtn {
-  background-color: rgba(105, 25, 25, 0.3);
+  margin-left: 5px;
+  background-color: white;
+  border: 1px solid #691919;
 }
 
 .backUp {
   position: -webkit-sticky;
   position: sticky;
-  top: 600px;
+  top: 400px;
   margin-left: 10px;
+  height: 0;
 }
 
 .backUp img {
@@ -440,11 +443,11 @@ footer .footTitle {
 }
 
 .right .gridProductPage div .hoverItems a:nth-child(2):hover {
-  background-color: rgba(32, 112, 32, 0.63);
+  background-color: rgba(78, 172, 78, 0.5);
 }
 
 .right .gridProductPage div .hoverItems a:first-child:hover {
-  background-color: rgba(240, 240, 240, 0.5);
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 .pagination {

@@ -1,9 +1,12 @@
-@import 'generalCss';
-@import 'navigatieHeader';
-@import 'footer';
-@import 'search';
-@import 'carusel';
-@import 'backUp';
+@import '../partials//generalCss';
+@import '../partials//navigatieHeader';
+@import '../partials//footer';
+@import '../partials//search';
+@import '../partials//carusel';
+@import '../partials//backUp';
+@import '../partials//textCarousel';
+@import '../partials/fontSize';
+@import '../partials/colors';
 .containerAsideProduct {
     display: flex;
     justify-content: center;
@@ -40,14 +43,14 @@
             ul {
                 width: 275px;
                 li {
-                    border: 1px solid rgb(105, 25, 25);
+                    border: 1px solid $baseColor;
                     padding: 5px 10px;
                 }
             }
             .secondUl {
                 li {
                     text-align: end;
-                    color: gray;
+                    color: $shadow;
                 }
             }
         }
@@ -59,14 +62,14 @@
     flex-direction: column;
     width: 300px;
     height: 305px;
-    border: 1px solid rgb(105, 25, 25);
+    border: 1px solid $baseColor;
     div {
         display: flex;
         justify-content: space-between;
         padding: 10px 10px;
     }
     a {
-        color: black;
+        color: $black;
         padding: 10px 10px;
     }
     p {
@@ -74,16 +77,23 @@
     }
     .cart {
         margin: 40px 10px;
-        background-color: rgb(59, 187, 59);
+        background-color: $buttonColor;
         text-align: center;
-        color: white;
+        color: $white;
         font-weight: bold;
         &:hover {
-            background-color: green;
+            background-color: $buttonColor;
         }
     }
     .aLinked {
-        border-top: 1px solid rgb(105, 25, 25);
+        border-top: 1px solid $baseColor;
     }
 }
 
+.clickable {
+    color: $black;
+    &:hover {
+        background-color: $baseColor;
+        color: $white;
+    }
+}
