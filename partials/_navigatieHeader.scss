@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'fontSize';
+
 .navigatie {
     padding: 20px 100px;
     background-color: $baseColor;
@@ -11,8 +12,75 @@
         justify-content: center;
         align-items: center;
     }
+    .topRightMenu{
+        display: none;
+        .dropDownMenu{
+        border-bottom: 1px solid $baseColor;
+        // padding: 10px 150px;
+        position: relative;
+        z-index: 2;
+        ul {
+            
+            padding: 5px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                // padding-top:10px;
+                color: $black;
+                font-weight: bold;
+                letter-spacing: 1px;
+                cursor: pointer;
+                &:hover ul {
+                    height: 120px;
+                    color: $baseColor;
+                }
+                &:hover ul li {
+                    display: block;
+                    width: 130px;
+                    text-align: center;
+                }
+                ul {margin-right: 50px;
+                    border-top: 2px solid $baseColor;
+                    top:45px;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    padding: 0;
+                    background-color: $white;
+                    height: 0px;
+                    transition: height 0.2s ease-in-out;
+                    li {
+                        background-color: $white;
+                        padding: 10px 70px;
+                        display: none;
+                        &:hover {
+                            background-color: $baseColor;
+                            a {
+                                color: $white;
+                            }
+                        }
+                        a {
+                           
+                            color: $black;
+                            font-weight: bolder;
+                            p{
+                                font-size: 15px;
+                            }
+                            img{
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
     .topRight {
         display: flex;
+     
         .iconNav {
             img {
                 width: 30px;
@@ -105,5 +173,22 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width:800px){
+    .navigatie{
+        justify-content: space-between;
+        padding: 10px 10px;
+        .topRight{
+            display: none;
+       
+        }
+        .topRightMenu{
+            display: block;
+        }
+    }
+    .dropDown{
+        padding: 10px 10px;
     }
 }

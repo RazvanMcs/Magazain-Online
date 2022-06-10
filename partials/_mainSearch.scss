@@ -34,3 +34,20 @@
         letter-spacing: 2px;
     }
 }
+@media (max-width:800px){
+    .search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input{
+            width: 300px;
+        }
+        .searchBtn{
+
+            text-align: center;
+            width: 100px;
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+    }
+}
